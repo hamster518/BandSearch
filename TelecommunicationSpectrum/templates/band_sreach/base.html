@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Spectrum Check</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    	<!-- Custom styles for this template -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/table-rwd.css' %}" rel="stylesheet">
+
+        <title>Telecommunication Spectrum</title>
+</head>
+
+<body>
+    {% block navbar %} {% include "navbar.html" %} {% endblock %}
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-right">
+            {% block content %} {% include "content.html" %} {% endblock %} 
+            {% block aside %} {% include "modal.html" %} {% endblock %}
+        </div>
+        <!--/row-->
+        <hr> 
+        {% block footer %} {% include "footer.html" %} {% endblock %}
+    </div>
+    <!--/.container-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/setBstModalMaxHeight.js' %}"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="{% static 'js/map.js' %}"></script>
+</body>
+
+</html>
