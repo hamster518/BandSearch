@@ -27,7 +27,7 @@ SECRET_KEY = 'n(sac%1!9y1g_e9@(@0o%l5%+$-#v0&bplrby_l)yv1%8v76)v'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['localhost', 'band_search.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'band-search.herokuapp.com']
 
 # Application definition
 
