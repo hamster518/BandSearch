@@ -21,7 +21,18 @@
     {% block navbar %} {% include "band_sreach/navbar.html" %} {% endblock %}
     <div class="container">
         <div class="row row-offcanvas row-offcanvas-right">
-            {% block content %} {% include "band_sreach/content.html" %} {% endblock %}
+            <h2 class="page-header">Map</h2>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12  col-xs-12">
+                <div class="row">
+                    <div class="thumbnail" id="regions_div"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12">
+                <h2 class="page-header">Result</h2>
+                <div class="row">
+                    {% block content %} {% include "band_sreach/content.html" %} {% endblock %}
+                </div>
+            </div>
             {% block aside %} {% include "band_sreach/modal.html" %} {% endblock %}
         </div>
         <!--/row-->
